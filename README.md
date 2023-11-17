@@ -1,4 +1,4 @@
 # Simple 3d Render Engine
 
-https://github.com/kocur4d/3d-render-engine/assets/1427354/1cbca090-6d6f-46cc-acdd-feb9f273a974
+https://github.com/kocur4d/3d-render-engine/assets/1427354/c0728191-bee2-483a-8a9a-08b4e926eb5a
 
