@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-export const useSetupCanvas = () => {
+export const useSetupCanvas = (width?: number, height?: number) => {
   const [ctx, setCtx] = useState<CanvasRenderingContext2D>();
 
   const ref = useCallback((node: HTMLCanvasElement) => {
@@ -15,10 +15,10 @@ export const useSetupCanvas = () => {
   useEffect(() => {
     if (ctx) {
       const canvas = ctx.canvas;
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = width ?? window.innerWidth;
+      canvas.height = height ?? window.innerHeight;
     }
-  }, [ctx]);
+  }, [ctx, height, width]);
 
   return { ref, ctx };
 };
